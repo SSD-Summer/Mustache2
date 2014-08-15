@@ -1,8 +1,16 @@
 ﻿<Window x:Class="Mustache2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="790" Width="715">
+    <Grid Name="Root_Window">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/title.jpg" Stretch="None"/>
+        </Grid.Background>
+        <Button Name="button_Worlds" Content="Start" HorizontalAlignment="Left" Margin="210,166,0,0" VerticalAlignment="Top" Width="282" Click="event_menu_click"
+                Tag="Worlds" Template="{StaticResource button_mainStyle}"  Height="62"/>
+        <Button Name="button_Endless" Content="Leaderboard" HorizontalAlignment="Left" Margin="210,275,0,0" VerticalAlignment="Top" Width="282" Click="event_menu_click"
+                Tag="Endless" Template="{StaticResource button_mainStyle}"  Height="62"/>
+        <Button Name="button_leaderboard" Content="How to Play" HorizontalAlignment="Left" Margin="210,384,0,0" VerticalAlignment="Top" Width="282" Click="event_menu_click" Tag="Leaderboard"
+                Template="{StaticResource button_mainStyle}" Height="62"/>
     </Grid>
 </Window>
