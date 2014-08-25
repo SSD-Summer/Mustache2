@@ -20,12 +20,6 @@ namespace Mustache2
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        menuGUI gameMenu;
-
-
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -38,26 +32,21 @@ namespace Mustache2
             button_leaderboard.Visibility = Visibility.Collapsed;
         }
 
-
         private void event_menu_click(object sender, RoutedEventArgs e)
         {
             var parent = sender as Button;
             string parent_tag = parent.Tag.ToString();
-            
-
-            if(parent_tag == "Worlds")
+            if (parent_tag == "Worlds")
             {
                 //MessageBox.Show("You clicked Worlds");
-
                 hide_start_buttons();
                 gameMenu = new menuGUI(this, 1);
-
             }
-            else if(parent_tag == "Endless")
+            else if (parent_tag == "Endless")
             {
                 MessageBox.Show("You clicked Endless");
             }
-            else if(parent_tag == "Leaderboard")
+            else if (parent_tag == "Leaderboard")
             {
                 MessageBox.Show("You clicked Leaderboard");
             }
@@ -67,5 +56,4 @@ namespace Mustache2
             }
         }
     }
-
 }

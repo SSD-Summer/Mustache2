@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Threading;
 
 namespace Mustache2
 {
     class gameTimer
     {
         DispatcherTimer timer;
-
         DispatcherPriority priority;
-
         public TimeSpan interval;
         public int duration;
-
         EventHandler timer_event;
-
-        
         /// <summary>
         /// Construct a timer
         /// </summary>
@@ -29,7 +23,6 @@ namespace Mustache2
         {
             interval = inter;
             duration = dur;
-
             timer_event = eve;
             timer = new DispatcherTimer();
         }
@@ -44,13 +37,10 @@ namespace Mustache2
         {
             interval = inter;
             duration = dur;
-
             timer_event = eve;
             priority = proi;
-            
             timer = new DispatcherTimer(priority);
         }
-
         /// <summary>
         /// Starts the timer
         /// </summary>
@@ -61,11 +51,8 @@ namespace Mustache2
             timer.Interval = interval;
             timer.Tick += timer_event;
             timer.Start();
-            
             return timer;
-
         }
-
 
     }
 }

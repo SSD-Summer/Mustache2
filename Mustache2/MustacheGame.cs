@@ -8,14 +8,5 @@ namespace Mustache2
 {
     class MustacheGame
     {
-
-
-
-
-
-
-
-
-
     }
 }

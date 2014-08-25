@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -68,12 +69,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <None Include="OLD - gamePlay.cs">
-      <SubType>Code</SubType>
-    </None>
     <Compile Include="gameTimer.cs" />
-    <Compile Include="Fix - RandomDist.cs" />
-    <None Include="OLD - tileClass.cs" />
+    <Compile Include="menuGUI.cs" />
+    <Compile Include="MustacheGame.cs" />
+    <Compile Include="RandomDist.cs" />
+    <Page Include="button_main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -82,15 +85,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <None Include="OLD - gameMain.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="menuGUI.cs" />
-    <Compile Include="MustacheGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,7 +105,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -116,6 +116,105 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_rex_moustashe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_rex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steg_moustashe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pig_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jellyfish_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jellyfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\howTo_page3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\howTo_page2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\howTo_page1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldfish_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog_moustashe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crab_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bron_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird_moustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
