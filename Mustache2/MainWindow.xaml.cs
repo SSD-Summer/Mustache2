@@ -40,7 +40,7 @@ namespace Mustache2
             {
                 //MessageBox.Show("You clicked Worlds");
                 hide_start_buttons();
-                gameMenu = new menuGUI(this, 1);
+                //gameMenu = new menuGUI(this, 1);
             }
             else if (parent_tag == "Endless")
             {

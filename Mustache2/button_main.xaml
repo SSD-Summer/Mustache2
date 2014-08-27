@@ -4,7 +4,7 @@
 <!--Style for all buttons not on worlds-->
     <ControlTemplate x:Key="button_mainStyle" TargetType="{x:Type Button}">
         <Grid>
-            <Rectangle MouseUp="Rectangle_MouseUp" RadiusY="22.7" RadiusX="22.7" Stroke="Black">
+            <Rectangle RadiusY="22.7" RadiusX="22.7" Stroke="Black">
                 <Rectangle.Fill>
                     <LinearGradientBrush StartPoint="0.5,0" MappingMode="RelativeToBoundingBox" EndPoint="0.5,1">
                         <GradientStop Color="#FFFF9900" Offset="0"/>

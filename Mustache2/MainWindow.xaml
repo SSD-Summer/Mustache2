@@ -1,10 +1,13 @@
-﻿<Window x:Class="Mustache2.MainWindow"
+﻿
+    <Window x:Class="Mustache2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:properties="clr-namespace:Mustache2"
         Title="MainWindow" Height="790" Width="715">
+        
     <Grid Name="Root_Window">
         <Grid.Background>
-            <ImageBrush ImageSource="/Resources/title.jpg" Stretch="None"/>
+            <ImageBrush  ImageSource="/Mustache2;Component/Resources/title.png"/> 
         </Grid.Background>
         <Button Name="button_Worlds" Content="Start" HorizontalAlignment="Left" Margin="210,166,0,0" VerticalAlignment="Top" Width="282" Click="event_menu_click"
                 Tag="Worlds" Template="{StaticResource button_mainStyle}"  Height="62"/>
